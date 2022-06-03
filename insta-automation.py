@@ -69,7 +69,7 @@ class instabot:
         while h1!=h2:
             h1=h2
             h2 = self.driver.execute_script('arguments[0].scrollTo(0,arguments[0].scrollHeight);return arguments[0].scrollHeight;',scroll_box)
-            time.sleep(1)
+            time.sleep(2)
 
 if __name__ == "__main__":
     username = input("Enter Insta Username: ")
@@ -94,7 +94,7 @@ if __name__ == "__main__":
             if choice==1:
                 print(followers)
             elif choice==2:
-                print(following)
+                print(followings)
             elif choice==3:
                 print(not_follow_back)
             elif choice==4:
@@ -109,4 +109,3 @@ if __name__ == "__main__":
     else:
         print("login unsuccessful.wrong password or username.")
     
- 
